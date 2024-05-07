@@ -58,7 +58,7 @@ table {
 *{
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color);
+    // background-color: var(--primary-color);
     
 }
 .mobile-navbar{
@@ -66,7 +66,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 0.7em;
-background-color: green;
+
 
  .hamburger{
     height: 3rem;
@@ -347,12 +347,7 @@ background-color: green;
 			justify-content: center;
 			display: flex;
 			gap: 10px;
-           
-			img{
-				// width:100px ;
-				// height: 200px;
-			}
-			.two{
+        .two{
 				padding-top: 80px;
 			}
 			.four{
@@ -390,6 +385,93 @@ background-color: green;
 
 	}
 
+}
+#mode{
+    width: 3rem;
+    height: 3rem;
+}
+.dark{
+    background-color: black !important;
+    color: white !important;
+
+}
+
+.footer{
+    color: var(--primary-color);
+    background-color: #80228c;
+    padding: 2rem 3rem;
+     margin-top: 3rem;
+
+    .p{
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .row{
+        .left{
+            .icon2{
+                display: flex;
+                gap: 3rem;
+            }
+           .text{
+            img{
+                margin-top: 10px;
+            }
+            .copy{
+                margin-left: 40px;
+               margin-top: -20px;
+            }
+            .all{
+                margin-left: 40px;
+                padding-top: 10px;   
+            }
+            .icons2{
+                gap: 20px;
+            }
+           } 
+
+
+        }
+        .center{
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+                a{
+                    text-decoration: none;
+                    color: var(--primary-color);
+                    font-size: 18px;
+                }
+            }
+        }
+        .right{
+          .cones{
+            .icons{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                size: 1px;
+            }
+          }
+        }
+        .covid{
+            .text{
+                .our{
+                    margin-bottom: 5px;
+                }
+                .team{
+                    margin-bottom: 5px;   
+                }
+                .test{
+                    margin-bottom: 5px;
+                }
+                .updates{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+      
+    }
 }
 
 
@@ -438,7 +520,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                 font-weight: 900;
                 li{
                  
-                    color: var(--secondary-color);
+                    // color: var(--secondary-color);
                     font-size: 20px;
                     span{
                         color: rgb(128, 34, 140);
@@ -519,6 +601,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             }
         }
     }
+   
 }
 
 
