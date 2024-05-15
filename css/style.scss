@@ -56,19 +56,55 @@ table {
     --secondary-color:black;
 }
 *{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     // background-color: var(--primary-color);
     
 }
+
+.links{
+    width: 100%;
+    height: 100vh;
+    background: #c398c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 100vw;
+    display: none;
+
+    ul{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+        a{
+            font-size: 2rem;
+        }
+    }
+}
+
+.slider{
+    transform: translateX(-100vw);
+    display: block;
+}
+
 .mobile-navbar{
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 0.7em;
 
+.lassy{
+    height: 55px;
+}
 
  .hamburger{
+    z-index: 2;
     height: 3rem;
     width: 3rem;
     border: 3px solid #80228C;
@@ -76,7 +112,7 @@ padding: 0 0.7em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
     padding-bottom: 3px;
 
     .line{
@@ -90,16 +126,21 @@ padding: 0 0.7em;
     display: none;
 }
 .banner{
+    padding: 7px;
     .container{
         padding: 50px 0;
         .row{
             .left{
-                // padding: 6em ;
+                .process{
+                    padding: 2px 0;
+                    font-size: 11px;
+                    font-weight: 600;
+                }
                 h1{
-                    padding-top: 6rem;
+                    padding-top: 0rem;
                     display: flex;
                     font-weight: bold;
-                    font-size: 30px;
+                    font-size: 31px;
                 }
                .media{
               img{
@@ -126,11 +167,11 @@ padding: 0 0.7em;
                 .btn{padding: 0;
                     display: flex;
                     gap: 20px;
-                   padding-top: 30px;
+                   padding-top: 23px;
                    justify-content: start;
                     .purple{
                     height: 6vh;
-                    width: 9rem;
+                    width: 10rem;
                     color: white;
                     background: #80228C;
                     border: none;
@@ -138,7 +179,7 @@ padding: 0 0.7em;
                  } 
                  .white{
                     height: 6vh;
-                    width: 9rem;
+                    width: 10rem;
                     border: 3px solid  #80228C; 
                     font-weight: 500;   
                  }  
@@ -159,16 +200,16 @@ padding: 0 0.7em;
             }
             .right{
               img{
-                height: 20rem;
+                height: 12rem;
                 // width: 22vw;
               }
                 .images{
                     display: flex;
-                    gap: 20px;
+                    gap: 6px;
                     
                     img{
-                        width: 32vw;
-                        margin-top: 30px;
+                        width: 24vw;
+                        margin-top: 27px;
                     }
                     }
                     .photo-1{
@@ -180,33 +221,29 @@ padding: 0 0.7em;
     }
 }
 .About{
-    padding-top: 50px;
+    padding-top: 20px;
      .container{
         .row{
             .left{
              .text{
                 width: 33rem;
                 p{
-                    // display: flex;
-                    padding-top: 30px;
-                    padding-left: 90px;
+                    padding-top: 25px;
+                    padding-left: 0px;
                     font-weight: 400;
-                    font-size: 20px;
+                    font-size: 16px;
                 }
              }
-                .cards{
-                    height: 22rem;
+             .cards{
+                video{
+                    width: 352px;
+                    height: 306px;
                     display: flex;
-                   padding-top: 40px; 
-                   padding-left: 90px;
-                
-                   .card-1{
-                    padding-top: 5rem;
-                    height: 22rem;
-                    
-                    
-                   }
+                    justify-content: center;
+                    align-items: center;
                 }
+             }
+               
             }
             .right{
                 padding-top: 70px;
@@ -214,22 +251,26 @@ padding: 0 0.7em;
                 .pics{
                     margin-left: -70px; 
                 img{
-                    height:26rem; 
-                    width: 80%;  
+                    height: 21rem;
+                     width: 445px;
+                      padding-top: 30px;
                 }
                 } 
                .text{
-                width: 20rem;
+                // width: 20rem;
                 p{
-                    padding-top: 20px;
-                    font-weight: 400;
+                    padding-top: 19px;
+                     font-weight: 500;
+                       padding-left: 58px;
+                       width: 447px;
                 }   
                }
                .btn{
-                padding-top: 10px;
+                padding-top: 16px;
+                 margin-left: 46px;
                
                 button{
-                    padding-left: -10px;
+                    // padding-left: -10px;
                     background: #80228C;
                     color: white;
                     font-weight: 600;
@@ -247,26 +288,30 @@ padding: 0 0.7em;
 //    display: flex; 
 //    justify-content: center;
     padding-top: 5rem;
-    padding-left: 15rem;
+    // padding-left: 15rem;
   
    .flexcontainer{
       .row{
         h3{
             padding-bottom: 30px;
-           margin-left: -50px;
+           margin-left: 0;
            }
        .cards{  
           .ppppp{
-           height: 60vh;
-           padding-right: 20px;
+            height: 52vh;
+    padding-right: 0;
+    width: 100%;
+        
         }
         .ooooo{
-            height: 60vh;
-            padding-right: 20px;   
+            height: 52vh;
+    padding-right: 0;
+    width: 100%;   
         }
         .fffff{
-            height: 60vh; 
-            width: 20%;   
+            height: 62vh;
+    padding-right: 0;
+    width: 100%;   
         }
          }
         }
@@ -278,39 +323,40 @@ padding: 0 0.7em;
     padding-top: 70px;
     .left{
         h3{
-            font-weight: 500;
+            font-weight: 600;
             padding-bottom: 60px;
         }
         img{
-            height: 40vh;
-            padding-left: 90px;
+            height: 33vh;
+            padding-left: 0px;
+            width: 100%;
         }
         .text{
             width: 35rem;
             .one{
                 font-weight: 700;
                 padding-top: 30px;
-                padding-left: 90px;
-               
+                padding-left: 0px;
             }
             .two{
                 font-weight: 600;
                 padding-top: 15px;
-                padding-left: 90px;   
+                padding-left: 0px;   
             }
             .three{
                 font-weight: 600;
-                padding-top: 10px;
-                padding-left: 95px; 
-                font-size: medium; 
+                 padding-top: 14px;
+                 padding-left: -9px;
+                  font-size: medium;
             }
         }
     }
     .right{
        img{
-        height: 45vh;
-        padding-top: 20px;
-     margin-left: -20px;
+      
+        font-weight: 600;
+    padding-top: 15px;
+    padding-left: 0px;
        }
        .text{
         .one{
@@ -347,6 +393,13 @@ padding: 0 0.7em;
 			justify-content: center;
 			display: flex;
 			gap: 10px;
+            .get{
+                display: none;
+            }
+            .bug{
+                height: 17rem;
+            }
+
         .two{
 				padding-top: 80px;
 			}
@@ -357,27 +410,32 @@ padding: 0 0.7em;
 				padding-top: 80px;
 			}
 		}
-		.tigzozo{
-			padding-top: 30px;
-			padding-left: 600px;
+		 .tigzozo{
+		 	// padding-top: 30px;
+		 	// padding-left: 600px;
            
-			.tigs{
-			p{
-                font-weight: 700;
-                margin-bottom: 10px;
+		 	.tigs{
+		 	p{
+                 font-weight: 700;
+                 margin-bottom: 8px;
+                 display: flex;
+                 justify-content: center;
             }
 
-			}
-			.us{
-				button{
-					background: purple;
-                    margin-left: -35px;
-					color: white;
-                    font-weight: 500;
-                    height: 5vh;
-                    width: 20%;
-                    border: 3px solid purple;
-				}
+		 	}
+		 	.us{
+                display: flex;
+                 justify-content: center;
+}
+			button{
+                background: purple;
+                color: white;
+                font-weight: 500;
+                height: 5vh;
+                width: 33%;
+                border: 4px solid purple;
+                margin-top: -1px;
+		 		}
 			}
 			
 			
@@ -385,7 +443,8 @@ padding: 0 0.7em;
 
 	}
 
-}
+
+
 #mode{
     width: 3rem;
     height: 3rem;
@@ -396,6 +455,319 @@ padding: 0 0.7em;
 
 }
 
+.footer{
+    color: var(--primary-color);
+    background-color: #80228c;
+    padding: 2rem 3rem;
+     margin-top: 3rem;
+
+    .p{
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .row{
+        .left{
+            .icon2{
+                display: flex;
+                gap: 3rem;
+            }
+            .ccccc{
+                height: 50px;
+            }
+           .text{
+            img{
+                margin-top: 10px;
+                height: 30px;
+            }
+            .copy{
+                margin-left: 40px;
+               margin-top: -20px;
+            }
+            .all{
+                margin-left: 40px;
+                padding-top: 10px;   
+            }
+            .icons2{
+                gap: 20px;
+            }
+           } 
+
+
+        }
+        .center{
+            padding-top: 20px;
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+                a{
+                    text-decoration: none;
+                    color: var(--primary-color);
+                    font-size: 18px;
+                }
+            }
+        }
+        .right{
+            padding-top: 25px;
+            .p{
+                padding-bottom: 10px;
+            }
+          .cones{
+            .icons{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                size: 1px;
+               
+            }
+          }
+        }
+        .covid{
+             padding-top: 25px;
+            .text{
+                .our{
+                    margin-bottom: 5px;
+                }
+                .team{
+                    margin-bottom: 5px;   
+                }
+                .test{
+                    margin-bottom: 5px;
+                }
+                .updates{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+      
+    }
+}
+
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .mobile-navbar{
+        display: none;
+    }
+    .pc-navbar{
+        display: block;
+        .flexcontainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                font-weight: 900;
+                a{
+                  font-size: 20px;
+                    span{
+                        color: rgb(128, 34, 140);
+                    }
+                }
+                .dark-icon{
+                    height: 30px;
+                    width: 30px;
+                    background: var(--secondary-color);
+                    border-radius: 50%;
+                }
+            }
+            .img-2{
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+    .About{
+        padding-top: 20px;
+         .container{
+            .row{
+             .right{
+                 .pics{
+                        margin-left: -70px; 
+                    img{
+                        height: 20rem;
+                         width: 100%;
+                         padding-top: 30px;
+                    }
+                    } 
+                }
+            }
+        }
+    }
+    .banner{
+        .flex-container-2{
+            .row{
+                .left{
+                    padding: 6em ;
+                     h1{
+                        display: flex;
+                        font-weight: bold;
+                        font-size: 23px;
+                     }
+                    p{
+                        padding-top: 1rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .right{
+                img{
+                  height: 60vh;
+                  width: 15vw;
+                }
+                  .images{
+                      display: flex;
+                      gap: 10px;
+                      
+                      img{
+                          width: 12vw;
+                          height: 22rem;
+                      }
+                      }
+                      .photo-1{
+                          padding-top: 100px;
+                          
+                      }
+              }
+        }
+    }
+    .Services{
+     .flexcontainer{
+              .row{
+                h3{
+                    font-weight: 700;
+                }
+               .cards{  
+                  .ppppp{
+                    height: 35vh;
+                    padding-right: 20px;
+                    width: 33%;
+                
+                }
+                .ooooo{
+                    height: 35vh;
+                    padding-right: 20px;
+                    width: 33%;   
+                }
+                .fffff{
+                    height: 35vh;
+                    width: 32%   
+                }
+                 }
+                }
+            }
+        }
+        .happy{
+    .container{
+    .row{
+  .left{
+      
+        img{
+           height: 33vh;
+        padding-left: 0px;
+        width: 91%;
+        }
+       
+    }
+    .right{
+       img{
+      
+      font-weight: 600;
+        padding-top: 120px;
+        padding-left: 0px;
+        height: 464px;
+        width: 102%;
+       }
+       .text{
+        .one{
+            font-weight: 600;
+            padding-top: 10px;
+             font-size: bold;     
+        }
+        .two{
+            font-weight: 600;
+            padding-top: 10px;
+             font-size: medium;  
+        }
+        .three{
+        font-size: 15px;     
+        }
+       } 
+    }
+   }
+    }
+}
+
+#instagram{
+    .seen{
+        h3{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+    }
+	.container{
+		.smiles{
+            padding-top: 60px;
+			justify-content: center;
+			display: flex;
+			gap: 10px;
+            .get{
+                display: block;
+                height: 200px;
+            }
+            .bug{
+                height: 200px;   
+            }
+
+		}
+        .tigzozo{
+         .tigs{
+           button{
+               background: purple;
+               color: white;
+               font-weight: 500;
+               height: 5vh;
+               width: 23%;
+               border: 4px solid purple;
+               margin-top: -1px;
+                }
+           }
+
+	}
+
+}
+}
 .footer{
     color: var(--primary-color);
     background-color: #80228c;
@@ -473,116 +845,178 @@ padding: 0 0.7em;
       
     }
 }
-
-
-
-
-
-
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-
-/* 
-Extra small devices (portrait phones, less than 576px) 
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
-
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 568px) {  
-
-}
-
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-    .mobile-navbar{
-        display: none;
-    }
-    .pc-navbar{
-        display: block;
-        .flexcontainer{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            ul{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 5rem;
-                font-weight: 900;
-                li{
-                 
-                    // color: var(--secondary-color);
-                    font-size: 20px;
-                    span{
-                        color: rgb(128, 34, 140);
-                    }
-                }
-                .dark-icon{
-                    height: 30px;
-                    width: 30px;
-                    background: var(--secondary-color);
-                    border-radius: 50%;
-                }
-            }
-            .img-2{
-                height: 30px;
-                width: 30px;
-            }
-        }
-    }
-    .banner{
-        .flex-container-2{
-            .row{
-                .left{
-                    padding: 6em ;
-                    h1{
-                        display: flex;
-                        font-weight: bold;
-                       
-                        
-                    }
-                    p{
-                        padding-top: 1rem;
-                        font-weight: 400;
-                    }
-                }
-            }
-            .right{
-                img{
-                  height: 60vh;
-                  width: 15vw;
-                }
-                  .images{
-                      display: flex;
-                      gap: 10px;
-                      
-                      img{
-                          width: 12vw;
-                          height: 22rem;
-                      }
-                      }
-                      .photo-1{
-                          padding-top: 100px;
-                          
-                      }
-              }
-        }
-    }
-
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .Services{
+     .flexcontainer{
+              .row{
+                h3{
+                    padding-bottom: 30px;
+                   margin-left: 0;
+                   }
+               .cards{  
+                  .ppppp{
+                    height: 81vh;
+            padding-right: 0;
+            width: 34%;
+                
+                }
+                .ooooo{
+                    height: 81vh;
+                    padding-right: 0;
+                    width: 31%;  
+                }
+                .fffff{
+                    height: 81vh;
+            padding-right: 0;
+            width: 34%;   
+                }
+                 }
+                }
+            }
+        }
+                .happy{
+    .container{
+    .row{
+  .left{
+      
+        img{
+        height: 75vh;
+        padding-left: 0px;
+        width: 91%;
+        }
+       
+    }
+    .right{
+       img{
+     font-weight: 600;
+        padding-top: 124px;
+        padding-left: 0px;
+        height: 576px;
+        width: 102%;
+       }
+     
+    }
+   }
+    }
+}
+#instagram{
+    .seen{
+        h3{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+    }
+	.container{
+		.smiles{
+            padding-top: 60px;
+			justify-content: center;
+			display: flex;
+			gap: 10px;
+            .get{
+                display: block;
+                height: 200px;
+                width: 120px;
+            }
+            .bug{
+                height: 200px;
+                width: 120px;   
+            }
 
+		}
+        .tigzozo{
+            // .tigs{
+              button{
+                  height: 5vh;
+                  width: 15%;
+                   }
+            //   }
+   
+       }
+
+}
+}
+.footer{
+    color: var(--primary-color);
+    background-color: #80228c;
+    padding: 2rem 3rem;
+     margin-top: 3rem;
+
+    .p{
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .row{
+        .left{
+            .icon2{
+                display: flex;
+                gap: 3rem;
+            }
+           .text{
+            img{
+                margin-top: 10px;
+            }
+            .copy{
+                margin-left: 40px;
+               margin-top: -20px;
+            }
+            .all{
+                margin-left: 40px;
+                padding-top: 10px;   
+            }
+            .icons2{
+                gap: 20px;
+            }
+           } 
+
+
+        }
+        .center{
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+                a{
+                    text-decoration: none;
+                    color: var(--primary-color);
+                    font-size: 18px;
+                }
+            }
+        }
+        .right{
+          .cones{
+            .icons{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                size: 1px;
+            }
+          }
+        }
+        .covid{
+                margin-top: 30px;
+            .text{
+                .our{
+                    margin-bottom: 5px;
+                }
+                .team{
+                    margin-bottom: 5px;   
+                }
+                .test{
+                    margin-bottom: 5px;
+                }
+                .updates{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+      
+    }
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -593,8 +1027,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                 .right{
                     .images{
                         img{
-                            width: 8vw;
+                            width: 13vw;
                             margin-top: 30px;
+                            height: 230px;
                         }
                         }
                 }
